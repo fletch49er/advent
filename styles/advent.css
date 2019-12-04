@@ -1,0 +1,143 @@
+/* <div> overflow fix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+@font-face {
+ 	font-family: LiberationSans;
+src: url(../fonts/PTS55F.ttf);
+}
+body {
+	margin: 0;
+	background-color: #fff;
+}
+#wrapper {
+	max-width: 1280px;
+	height: 815px;
+	margin: auto;
+	padding-top: 100px;
+	background-image: url("../images/christmas-star-wars.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#advent {
+	max-width: 1120px;
+	display: -webkit-flex; /* Safari */
+   -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+   display: flex;
+   flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	position:relative;
+}
+div.floatLeft {
+	display: inline-block;
+	max-width: 95%;
+	width: 100px;
+	height: 100px;
+	border: 1px dashed #000;
+	margin: 30px 40px;
+	color: #000;
+	text-align: center;
+	font-size: 35px;
+	line-height: 100px;
+}
+div.open {
+	background-color: #fff;
+}
+.pointer {
+	cursor: pointer;
+}
+a:link, a:visited {
+	color: yellow;
+}
+a:hover {
+	color: red;
+}
+
+@media only screen and (min-width: 781px) and (max-width: 960px) {
+	body {
+		background-color: #fff;
+	}
+	#wrapper {
+		max-width: 100%;
+		height: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-repeat: repeat-y;
+	}
+	div.floatLeft {
+		margin: 15px;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 780px) {
+	body {
+		background-color: #fff;
+	}
+	#wrapper {
+		max-width: 100%;
+		height: 100%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-repeat: repeat-y;
+	}
+	div.floatLeft {
+		margin: 10px;
+	}
+}
+
+@media only screen and (min-width: 380px) and (max-width: 600px) {
+	body {
+		background-color: #fff;
+	}
+	#wrapper {
+		width: 100%; 
+		height: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-repeat: repeat-y;
+	}
+	div.floatLeft {
+		margin: 10px 5px;
+	}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 379px) {
+	body {
+		background-color: #fff;
+	}
+	#wrapper {
+		width: 100%; 
+		height: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-repeat: repeat-y;
+	}
+	div.floatLeft {
+		margin: 10px 5px;
+	}
+}
+
+@media only screen and (max-width: 359px) {
+	body {
+		background-color: #fff;
+	}
+	#wrapper {
+		width: 100%; 
+		height: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-repeat: repeat-y;
+	}
+	#advent {
+		width: 100%;
+	}
+	div.floatLeft {
+		margin: 5px 1px;
+	}
+}
